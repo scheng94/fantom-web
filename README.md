@@ -1,4 +1,4 @@
-# donor-app
+# fantom-web
 
 ## Project setup
 ```
