@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-toolbar :elevation="8">
+    <v-toolbar :elevation="8" class="fixed-bar">
       <v-toolbar-title>
         <router-link to="/home" slots="span" style="cursor: pointer">
           <v-img :src="homeImage" height="70px"></v-img>
@@ -67,6 +67,13 @@
 </script>
 
 <style>
+
+.fixed-bar {
+  position: sticky;
+  position: -webkit-sticky; /* for Safari */
+  top: 0;
+  z-index: 2;
+}
 
 .home-logo {
   max-width: 100%; /* Adjust the max-width as needed */
